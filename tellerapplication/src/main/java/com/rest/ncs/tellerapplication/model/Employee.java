@@ -1,4 +1,4 @@
-package com.rest.ncs.model;
+package com.rest.ncs.tellerapplication.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

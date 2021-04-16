@@ -1,15 +1,13 @@
-package com.rest.ncs.controller;
+package com.rest.ncs.tellerapplication.controller;
 
-import com.rest.ncs.model.Employee;
-import com.rest.ncs.repository.EmployeeRepository;
-import org.keycloak.representations.AccessToken;
+import com.rest.ncs.tellerapplication.model.Employee;
+import com.rest.ncs.tellerapplication.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.security.RolesAllowed;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
