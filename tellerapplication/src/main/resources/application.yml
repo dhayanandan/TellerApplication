@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+keycloak:
+  auth-server-url: http://localhost:8180/auth
+  realm: teller-app
+  resource: teller-app
+  public-client: true
+  bearer-only: true
+  ssl-required: external
+  use-resource-role-mappings: true
+  credentials:
+    secret: f1b95cba-3616-4f23-b439-5f28fb848ecc
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/teller?allowPublicKeyRetrieval=true&useSSL=false
+    username: teller
+    password: teller
+    hikari:
+      initialization-fail-timeout: 0
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
