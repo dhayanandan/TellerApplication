@@ -26,7 +26,7 @@ public class EmployeeController {
         return ResponseEntity.ok(repository.save(employee));
     }
 
-  //  @RolesAllowed("user")
+    @RolesAllowed("user")
     @GetMapping("/employees")
     public ResponseEntity<List<Employee>> getAll(){
         return  ResponseEntity.ok(repository.findAll());

@@ -7,7 +7,7 @@ keycloak:
   resource: teller-app
   public-client: true
   bearer-only: true
-  ssl-required: external
+  #ssl-required: external
   use-resource-role-mappings: true
   credentials:
     secret: f1b95cba-3616-4f23-b439-5f28fb848ecc
